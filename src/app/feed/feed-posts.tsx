@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+import PostTimestamp from '@/components/post-timestamp/post-timestamp';
 import { Post, User } from '@/types';
 
 interface Props {
@@ -46,9 +47,7 @@ export default function FeedPosts({ friendIds, users }: Props) {
               <Link href={`/users/${author?.id}`} className="font-semibold">
                 {author?.name}
               </Link>
-              <span className="ml-2 text-sm">
-                ({new Date(post.timestamp).toLocaleString()})
-              </span>
+              <PostTimestamp className="ml-2" post={post} />
             </div>
             <p className="mb-2">{post.content}</p>
             {post.imageUrl && (

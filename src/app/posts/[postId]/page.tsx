@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+import PostTimestamp from '@/components/post-timestamp/post-timestamp';
 import { Post, User } from '@/types';
 import fetchFromAPI from '@/utils/fetch-from-api';
 
@@ -27,9 +28,7 @@ export default async function PostPage({ params }: Props) {
       <h1 className="text-3xl font-bold mb-4">Post Detail</h1>
 
       <div className="border p-4 rounded shadow">
-        <div className="mb-2 text-sm">
-          Posted on {new Date(post.timestamp).toLocaleString()}
-        </div>
+        <PostTimestamp className="mb-2" prefix="Posted on" post={post} />
 
         <div className="mb-4">
           By <Link href={`/users/${author.id}`}>{author.name}</Link>

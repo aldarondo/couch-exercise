@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+import PostTimestamp from '@/components/post-timestamp/post-timestamp';
 import { Post } from '@/types';
 
 interface Props {
@@ -37,9 +38,7 @@ export default function UserPosts({ userId }: Props) {
     <ul className="space-y-4">
       {posts.map((post) => (
         <li key={post.id} className="border p-4 rounded shadow">
-          <div className="ml-2 text-sm">
-            {new Date(post.timestamp).toLocaleString()}
-          </div>
+          <PostTimestamp className="ml-2" post={post} />
           <p className="mb-2">{post.content}</p>
           {post.imageUrl && (
             <img

@@ -28,16 +28,22 @@ export default async function UserPage({ params }: Props) {
 
   return (
     <main className="max-w-2xl mx-auto px-4 py-6">
-      <h1 className="text-3xl font-bold mb-2">{user.name}&apos;s Profile</h1>
-      <p className="text-gray-600 mb-1">{user.occupation}</p>
-      <p className="text-gray-500 mb-4">Planet: {user.planet}</p>
-      {user.avatarUrl && (
-        <img
-          src={user.avatarUrl}
-          alt={user.name}
-          className="rounded mb-2 max-h-64 object-cover"
-        />
-      )}
+      <div className="flex items-start gap-6 mb-4">
+        {user.avatarUrl && (
+          <img
+            src={user.avatarUrl}
+            alt={user.name}
+            className="rounded object-contain w-40 h-40 bg-gray-100"
+          />
+        )}
+        <div>
+          <h1 className="text-3xl font-bold mb-2">
+            {user.name}&apos;s Profile
+          </h1>
+          <p className="text-gray-600 mb-1">{user.occupation}</p>
+          <p className="text-gray-500 mb-4">Planet: {user.planet}</p>
+        </div>
+      </div>
 
       <h2 className="text-xl font-semibold mt-6 mb-2">Friends</h2>
       {friendUsers.length === 0 ? (
