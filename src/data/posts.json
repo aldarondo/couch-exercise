@@ -1,0 +1,21 @@
+[
+  {
+    "id": "101",
+    "authorId": "3",
+    "content": "Bite my shiny metal... oh wait, this is public.",
+    "timestamp": "2025-06-12T10:00:00Z",
+    "imageUrl": "https://static.wikia.nocookie.net/enfuturama/images/a/ac/Space_Pilot_3000_%28Main_Episode%29_-_48.png"
+  },
+  {
+    "id": "102",
+    "authorId": "1",
+    "content": "I fell asleep in the cryo-chamber again. #Whoops",
+    "timestamp": "2025-06-11T14:20:00Z"
+  },
+  {
+    "id": "103",
+    "authorId": "2",
+    "content": "Just wrestled a sewer mutant. Typical Tuesday.",
+    "timestamp": "2025-06-10T08:45:00Z"
+  }
+]

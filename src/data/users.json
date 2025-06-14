@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Philip J. Fry",
+    "avatarUrl": "https://static.wikia.nocookie.net/enfuturama/images/4/4c/Character_Fry.png",
+    "occupation": "Delivery Boy",
+    "planet": "Earth"
+  },
+  {
+    "id": "2",
+    "name": "Turanga Leela",
+    "avatarUrl": "https://static.wikia.nocookie.net/enfuturama/images/3/3d/Character_Leela.png",
+    "occupation": "Captain",
+    "planet": "Earth"
+  },
+  {
+    "id": "3",
+    "name": "Bender Bending Rodríguez",
+    "avatarUrl": "https://static.wikia.nocookie.net/enfuturama/images/3/3d/Character_Bender.png",
+    "occupation": "Bending Unit",
+    "planet": "Earth"
+  }
+]
